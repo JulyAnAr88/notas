@@ -54,8 +54,8 @@
   .concepto-box{
     display: flex;
     position: relative;
-    padding-top: 3rem;
-    padding-left: 6rem;
+    padding-top: 3.4rem;
+    padding-left: 6.4rem;
   }
 
   @media screen and (min-width: 768px) {

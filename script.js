@@ -15,11 +15,6 @@ $(document).ready(function () {
                 "concepto": "Excelente &#128526"
             },
             {
-                "apellido": "Romero",
-                "nombre": "Natalí",
-                "concepto": "sos lo más de lo más, sabelo"
-            },
-            {
                 "apellido": "Acevedo",
                 "nombre": "Diana",
                 "concepto": "No aprobado &#128531"
@@ -83,6 +78,11 @@ $(document).ready(function () {
                 "apellido": "Pérez",
                 "nombre": "María Itati",
                 "concepto": "No aprobado &#128531"
+            },
+            {
+                "apellido": "Alma",
+                "nombre": "Alma",
+                "concepto": "La mejor más capa &#128526"
             },
             {
                 "apellido": "Solís",
