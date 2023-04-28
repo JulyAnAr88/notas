@@ -1,0 +1,36 @@
+.welcome{
+    padding: 0.5rem;
+    border-top: thin solid var(--first-color);
+  border-bottom: thin solid var(--first-color);
+  background-color: var(--bg-color);
+}
+
+.home-container{
+    display: block;
+    background-color: var(--gray-light-color);
+    justify-content: space-between;
+    align-content: center;
+    padding-top: var(--header-height);
+}
+
+.descargas {
+  display: block;
+    background-color: var(--gray-light-color);
+    justify-content: space-between;
+    align-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .home{
+    display: flex;
+    flex-direction: row;
+  }
+  .real{
+    height: 500px;
+  }
+
+  .parraph{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
