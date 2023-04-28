@@ -20,11 +20,6 @@ $(document).ready(function () {
                 "concepto": "sos lo más de lo más, sabelo"
             },
             {
-                "apellido": "Oliver",
-                "nombre": "María Victoria",
-                "concepto": "Te amooo"
-            },
-            {
                 "apellido": "Acevedo",
                 "nombre": "Diana",
                 "concepto": "No aprobado &#128531"
@@ -47,52 +42,52 @@ $(document).ready(function () {
             {
                 "apellido": "Ponferrada",
                 "nombre": "Gastón Alejandro",
-                "concepto": ""
+                "concepto": "Aprobado &#128513"
             },
             {
                 "apellido": "Albarracin",
                 "nombre": "Indiana",
-                "concepto": ""
+                "concepto": "No aprobado &#128531"
             },
             {
                 "apellido": "Reyes",
                 "nombre": "Lucas",
-                "concepto": ""
+                "concepto": "No aprobado &#128531"
             },
             {
                 "apellido": "Plattner",
                 "nombre": "Marco giuliano",
-                "concepto": ""
+                "concepto": "Aprobado &#128513"
             },
             {
                 "apellido": "Esquivel",
                 "nombre": "Mateo",
-                "concepto": ""
+                "concepto": "No aprobado &#128531"
             },
             {
                 "apellido": "Ramirez  ",
                 "nombre": "Melody",
-                "concepto": ""
+                "concepto": "Excelente &#128526"
             },
             {
                 "apellido": "Passarelli ",
                 "nombre": "Milagros",
-                "concepto": ""
+                "concepto": "Aprobado &#128513"
             },
             {
                 "apellido": "Ahmed ",
                 "nombre": "Nayeli",
-                "concepto": ""
+                "concepto": "No aprobado &#128531"
             },
             {
                 "apellido": "Pérez",
                 "nombre": "María Itati",
-                "concepto": ""
+                "concepto": "No aprobado &#128531"
             },
             {
                 "apellido": "Solís",
                 "nombre": "Ana Paula",
-                "concepto": ""
+                "concepto": "Aprobado &#128513"
             }
         ]
         const input = document.querySelector('[data-name-input]');
