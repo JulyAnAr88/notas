@@ -12,7 +12,12 @@ $(document).ready(function () {
             {
                 "apellido": "Budiño",
                 "nombre": "Florencia",
-                "concepto": "algo"
+                "concepto": "Excelente &#128526"
+            },
+            {
+                "apellido": "Romero",
+                "nombre": "Natalí",
+                "concepto": "sos lo más de lo más, sabelo"
             },
             {
                 "apellido": "Oliver",
@@ -22,22 +27,22 @@ $(document).ready(function () {
             {
                 "apellido": "Acevedo",
                 "nombre": "Diana",
-                "concepto": ""
+                "concepto": "No aprobado &#128531"
             },
             {
                 "apellido": "Zorzzi",
                 "nombre": "Enzo",
-                "concepto": ""
+                "concepto": "Excelente &#128526"
             },
             {
                 "apellido": "Loza",
                 "nombre": "Fabricio",
-                "concepto": ""
+                "concepto": "Aprobado &#128513"
             },
             {
                 "apellido": "Grilli",
                 "nombre": "Facundo",
-                "concepto": ""
+                "concepto": "Aprobado &#128513"
             },
             {
                 "apellido": "Ponferrada",
