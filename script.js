@@ -40,7 +40,7 @@ $(document).ready(function () {
                 "concepto": "Aprobado &#128513"
             },
             {
-                "apellido": "Albarracin",
+                "apellido": "Albarracín",
                 "nombre": "Indiana",
                 "concepto": "No aprobado &#128531"
             },
@@ -60,7 +60,7 @@ $(document).ready(function () {
                 "concepto": "No aprobado &#128531"
             },
             {
-                "apellido": "Ramirez  ",
+                "apellido": "Ramírez",
                 "nombre": "Melody",
                 "concepto": "Excelente &#128526"
             },
@@ -110,7 +110,7 @@ $(document).ready(function () {
     })
 })
 
-function setName(notasJSON, apellido){
+function setName(notasJSON, apellido) {
     const nameCert = document.querySelector('[name-text]');
     const concepto = document.querySelector('[concepto-text]');
     /* JSON.stringify(sessionStorage.getItem("name"));*/
@@ -120,13 +120,11 @@ function setName(notasJSON, apellido){
             const name = estudiante.nombre;
             const concept = estudiante.concepto;
             console.log(name);
-            nameCert.innerHTML = name;  
-            concepto.innerHTML = concept;  
-            break;  
+            nameCert.innerHTML = name;
+            concepto.innerHTML = concept;
+            break;
+
         }
-        
     });
-        
-    
 }
 
