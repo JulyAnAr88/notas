@@ -15,6 +15,11 @@ $(document).ready(function () {
                 "concepto": "algo"
             },
             {
+                "apellido": "Oliver",
+                "nombre": "María Victoria",
+                "concepto": "Te amooo"
+            },
+            {
                 "apellido": "Acevedo",
                 "nombre": "Diana",
                 "concepto": ""
@@ -100,7 +105,7 @@ $(document).ready(function () {
 
         localStorage.setItem('name', JSON.stringify(nameStorage));
 
-        setName(notasJSON, "Budiño");
+        setName(notasJSON, value);
 
     })
 })
