@@ -10,14 +10,24 @@ $(document).ready(function () {
 
         const notasJSON = [
             {
+                "apellido": "Budiño",
+                "nombre": "Florencia",
+                "concepto": "Excelente &#128526"
+            },
+            {
+                "apellido": "Acevedo",
+                "nombre": "Diana",
+                "concepto": "No aprobado &#128531"
+            },
+            {
                 "apellido": "Zorzzi",
                 "nombre": "Enzo",
-                "concepto": "No aprobado &#128531"
+                "concepto": "Excelente &#128526"
             },
             {
                 "apellido": "Loza",
                 "nombre": "Fabricio",
-                "concepto": "No aprobado &#128531"
+                "concepto": "Aprobado &#128513"
             },
             {
                 "apellido": "Grilli",
@@ -32,12 +42,17 @@ $(document).ready(function () {
             {
                 "apellido": "Albarracín",
                 "nombre": "Indiana",
-                "concepto": "Aprobado &#128513"
+                "concepto": "No aprobado &#128531"
+            },
+            {
+                "apellido": "Reyes",
+                "nombre": "Lucas",
+                "concepto": "No aprobado &#128531"
             },
             {
                 "apellido": "Plattner",
                 "nombre": "Marco giuliano",
-                "concepto": "No aprobado &#128531"
+                "concepto": "Aprobado &#128513"
             },
             {
                 "apellido": "Esquivel",
@@ -45,12 +60,17 @@ $(document).ready(function () {
                 "concepto": "No aprobado &#128531"
             },
             {
-                "apellido": "Passarelli",
+                "apellido": "Ramírez",
+                "nombre": "Melody",
+                "concepto": "Excelente &#128526"
+            },
+            {
+                "apellido": "Passarelli ",
                 "nombre": "Milagros",
                 "concepto": "Aprobado &#128513"
             },
             {
-                "apellido": "Ahmed",
+                "apellido": "Ahmed ",
                 "nombre": "Nayeli",
                 "concepto": "No aprobado &#128531"
             },
@@ -60,9 +80,14 @@ $(document).ready(function () {
                 "concepto": "No aprobado &#128531"
             },
             {
-                "apellido": "Solis",
+                "apellido": "Alma",
+                "nombre": "Alma",
+                "concepto": "La mejor más capa &#128526"
+            },
+            {
+                "apellido": "Solís",
                 "nombre": "Ana Paula",
-                "concepto": "Excelente &#128526"
+                "concepto": "Aprobado &#128513"
             }
         ]
         const input = document.querySelector('[data-name-input]');
