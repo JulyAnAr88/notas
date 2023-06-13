@@ -39,10 +39,10 @@
     fill: var(--first-color);
   }
   
-  .modal[id|="nota"]:target{
+ /*  .modal[id|="nota"]:target{
     opacity: 1;
     pointer-events: auto;
-  }
+  } */
   
   .name-box{
     display: flex;
