@@ -1,25 +1,48 @@
-.welcome{
-    padding: 0.5rem;
-    border-top: thin solid var(--first-color);
+.welcome {
+  padding: 0.5rem;
+  border-top: thin solid var(--first-color);
   border-bottom: thin solid var(--first-color);
   background-color: var(--bg-color);
 }
 
-.home-container{
-    display: block;
-    height: 35rem;
-    background-color: var(--gray-light-color);
-    justify-content: space-between;
-    align-content: center;
-    padding-top: var(--header-height);
+.home-container {
+  display: block;
+  height: 35rem;
+  background-color: var(--gray-light-color);
+  justify-content: space-between;
+  align-content: center;
+  padding-top: var(--header-height);
 }
 
-#input-apellido{
- padding-top: 1.5rem;
- padding-bottom: 2rem;
+#input-apellido {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.examen-box{
+.estudiante {
+  padding-top: 1rem;
+}
+
+.recupera {
+  padding-top: 1rem;
+}
+
+.nota-tabla {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.td {
+  background-color: var(--first-color);
+}
+
+.thead-dark {
+  background-color: var(--gray-dark-color);
+  
+}
+
+
+.examen-box {
   display: flex;
   position: inherit;
   padding-top: 1.5rem;
@@ -29,21 +52,23 @@
 
 .descargas {
   display: block;
-    background-color: var(--gray-light-color);
-    justify-content: space-between;
-    align-content: center;
+  background-color: var(--gray-light-color);
+  justify-content: space-between;
+  align-content: center;
 }
 
+
 @media screen and (min-width: 1024px) {
-  .home{
+  .home {
     display: flex;
     flex-direction: row;
   }
-  .real{
+
+  .real {
     height: 500px;
   }
 
-  .parraph{
+  .parraph {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
