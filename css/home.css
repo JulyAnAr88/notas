@@ -28,17 +28,21 @@
 }
 
 .nota-tabla {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-collapse: collapse;
 }
 
-.td {
+.td-nf {
   background-color: var(--first-color);
 }
 
+td, th {
+  border: var(--gray-dark-color) 0.5px solid;
+}
+
 .thead-dark {
-  background-color: var(--gray-dark-color);
-  
+  background-color: var(--gray-color);
 }
 
 

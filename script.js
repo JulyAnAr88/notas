@@ -50,7 +50,7 @@ $(document).ready(function () {
                 "recupera": "Debe asistir a semana de recuperatorio"
             },
             {
-                "apellido": "Pérez",
+                "apellido": "Perez",
                 "nombre": "María Itati",
                 "act_1": "1,11",
                 "act_2": "1,43",
@@ -90,7 +90,7 @@ $(document).ready(function () {
                 "recupera": "Aprobada"
             },
             {
-                "apellido": "Albarracín",
+                "apellido": "Albarracin",
                 "nombre": "Indiana",
                 "act_1": "5",
                 "act_2": "5,5",
@@ -191,7 +191,7 @@ function getLink(notasJSON, apellido) {
             <td>${estudiante.act_2}</td>
             <td>${estudiante.tp}</td>
             <td>${estudiante.asistencia}</td>
-            <td class="td">${estudiante.final}</td>
+            <td class="td-nf">${estudiante.final}</td>
             `;
             linea.innerHTML = contenido;
             tabla.innerHTML = '';
