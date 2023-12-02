@@ -21,6 +21,7 @@
 
 .estudiante {
   padding-top: 1rem;
+  padding-bottom: 0.7rem;
 }
 
 .recupera {
@@ -81,4 +82,20 @@ td, th {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
+
+  #container-tabla{
+    margin-left: 5rem;    
+    margin-right: 5rem;
+  }
+
+  #comentarios-finales{
+  margin-top: 1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  h6 {  
+    font-size: 0.6rem;
+  }
+
+
 }
