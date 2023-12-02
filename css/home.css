@@ -7,7 +7,7 @@
 
 .home-container {
   display: block;
-  height: 50rem;
+  height: 60rem;
   background-color: var(--gray-light-color);
   justify-content: space-between;
   align-content: center;
