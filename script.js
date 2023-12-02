@@ -4,148 +4,251 @@
 /*btn.addEventListener ('click', (event) => {
     event.preventDefault();*/
 
-$(document).ready(function () {
-    $('[data-btn]').click(function () {
-        $("#nota").modal();
+var materias = [
+    "Cs. Sociales",
+    "Cs. Naturales",
+    "Matemática",
+    "Lengua",
+    "Inglés",
+    "Economía y Adm."
+]
 
-        const notasJSON = [
+$(document).ready(function () {
+    $('[data-btn-mate]').click(function () {
+        $("#nota-mate").modal();
+
+        const notasMateJSON = [
             {
-                "apellido": "Budiño",
-                "nombre": "Florencia",
-                "act_1": "8,33",
-                "act_2": " ",
-                "tp": " ",
-                "asistencia": "57,1%",
-                "final": "4",
-                "recupera": "Debe asistir a semana de recuperatorio"
+                "apellido": "Barrios",
+                "nombre": "Jesica",
+                "dni": "",
+                "act_1": "0",
+                "tp": "0",
+                "asistencia": "7",
+                "final": "1",
+                "recupera": "Libre"
+            },            
+            {
+                "apellido": "Casco",
+                "nombre": "Andrea",
+                "dni": "",
+                "act_1": "0",
+                "tp": "0",
+                "asistencia": "25",
+                "final": "1",
+                "recupera": "Libre"
             },
             {
-                "apellido": "Acevedo",
-                "nombre": "Diana",
-                "act_1": "3,33",
-                "act_2": " ",
-                "tp": " ",
-                "asistencia": "52,4%",
-                "final": "3",
-                "recupera": "Debe asistir a semana de recuperatorio"
+                "apellido": "Casco",
+                "nombre": "Laura",
+                "dni": "",
+                "act_1": "0",
+                "tp": "9",
+                "asistencia": "35",
+                "final": "-",
+                "recupera": "<p>Recupera primera parte (conceptos básicos de Estadística, revisar el siguiente archivo (<a href='https:\/\/drive.google.com\/file\/d\/1pc1wkD7G23eTOGxQLNPZ7FnjzuOI6l_i\/view?usp=drive_link' target='_blank' rel='noopener'>Estadística<\/a>, antes de <strong>Tabla de frecuencia</strong>)<\/p>"
             },
             {
-                "apellido": "Ahmed",
-                "nombre": "Nayeli",
-                "act_1": "2,22",
-                "act_2": "6,07",
-                "tp": "7,5",
-                "asistencia": "61,9%",
-                "final": "7",
-                "recupera": "Aprobada"
+                "apellido": "Casco",
+                "nombre": "Zunilda",
+                "dni": "",
+                "act_1": "10",
+                "tp": "-",
+                "asistencia": "47",
+                "final": "-",
+                "recupera": "Debe entregar TP integrador"
             },
             {
-                "apellido": "Loza",
-                "nombre": "Fabricio",
-                "act_1": "7,22",
-                "act_2": "1,07",
-                "tp": " ",
-                "asistencia": "57,1%",
-                "final": "4",
-                "recupera": "Debe asistir a semana de recuperatorio"
-            },
-            {
-                "apellido": "Perez",
-                "nombre": "María Itati",
-                "act_1": "1,11",
-                "act_2": "1,43",
-                "tp": " ",
-                "asistencia": "61,9%",
-                "final": "3",
-                "recupera": "Debe asistir a semana de recuperatorio"
-            },
-            {
-                "apellido": "Ponferrada",
-                "nombre": "Gastón Alejandro",
-                "act_1": "5,56",
-                "act_2": "6,43",
-                "tp": " ",
-                "asistencia": "71,4%",
-                "final": "7",
-                "recupera": "Aprobado"
-            },
-            {
-                "apellido": "Reyes",
-                "nombre": "Lucas",
-                "act_1": "3,33",
-                "act_2": " ",
-                "tp": " ",
-                "asistencia": "47,6%",
-                "final": "3",
-                "recupera": "Debe asistir a semana de recuperatorio"
-            },
-            {
-                "apellido": "Solis",
-                "nombre": "Ana Paula",
-                "act_1": "6,11",
-                "act_2": "8,43",
-                "tp": " ",
-                "asistencia": "76,2%",
-                "final": "8",
-                "recupera": "Aprobada"
-            },
-            {
-                "apellido": "Albarracin",
-                "nombre": "Indiana",
+                "apellido": "Espíndola",
+                "nombre": "Jorge",
+                "dni": "",
                 "act_1": "5",
-                "act_2": "5,5",
-                "tp": "7",
-                "asistencia": "95,2%",
-                "final": "7",
-                "recupera": "Aprobada"
+                "tp": "5,5",
+                "asistencia": "43",
+                "final": "-",
+                "recupera": "<p>Recupera primera parte (conceptos básicos de Estadística, revisar el siguiente archivo <a href='https:\/\/drive.google.com\/file\/d\/1pc1wkD7G23eTOGxQLNPZ7FnjzuOI6l_i\/view?usp=drive_link' target='_blank' rel='noopener'>Estadística<\/a>, antes de <strong>Tabla de frecuencia<\/strong>)<\/p>"
             },
             {
-                "apellido": "Esquivel",
-                "nombre": "Mateo",
-                "act_1": "4,44",
-                "act_2": "2,14",
-                "tp": "8",
-                "asistencia": "81%",
-                "final": "5",
-                "recupera": "Debe asistir a semana de recuperatorio"
+                "apellido": "Fernández",
+                "nombre": "Lucía",
+                "dni": "",
+                "act_1": "5",
+                "tp": "5,5",
+                "asistencia": "50",
+                "final": "-",
+                "recupera": "<p>Recupera primera parte (conceptos básicos de Estadística, revisar el siguiente archivo <a href='https:\/\/drive.google.com\/file\/d\/1pc1wkD7G23eTOGxQLNPZ7FnjzuOI6l_i\/view?usp=drive_link' target='_blank' rel='noopener'>Estadística<\/a>, antes de <strong>Tabla de frecuencia<\/strong>)<\/p>"
             },
             {
-                "apellido": "Grilli",
-                "nombre": "Facundo",
-                "act_1": "7,22",
-                "act_2": "6,43",
-                "tp": "8",
-                "asistencia": "81%",
-                "final": "8",
-                "recupera": "Aprobado"
+                "apellido": "Gamarra",
+                "nombre": "Gastón",
+                "dni": "",
+                "act_1": "8",
+                "tp": "7,7",
+                "asistencia": "60",
+                "final": "9",
+                "recupera": "Aprobado, ¡excelente trabajo, felicitaciones por el esfuerzo! 💪"
             },
             {
-                "apellido": "Passarelli",
+                "apellido": "Garro",
+                "nombre": "Marianela",
+                "dni": "",
+                "act_1": "0",
+                "tp": "-",
+                "asistencia": "27",
+                "final": "-",
+                "recupera": "Libre"
+            },
+            {
+                "apellido": "Hilve",
+                "nombre": "Claudia",
+                "dni": "",
+                "act_1": "7",
+                "tp": "8,3",
+                "asistencia": "73",
+                "final": "9",
+                "recupera": "Aprobada, ¡excelente trabajo, felicitaciones por el esfuerzo! 💪"
+            },
+            {
+                "apellido": "Lencina",
+                "nombre": "Lorena",
+                "dni": "",
+                "act_1": "8",
+                "tp": "7,9",
+                "asistencia": "73",
+                "final": "9",
+                "recupera": "Aprobada, ¡excelente trabajo, felicitaciones por el esfuerzo! 💪"
+            },
+            {
+                "apellido": "Machado",
+                "nombre": "Griselda",
+                "dni": "",
+                "act_1": "5",
+                "tp": "5,5",
+                "asistencia": "70",
+                "final": "-",
+                "recupera": "<p>Recupera primera parte (conceptos básicos de Estadística, revisar el siguiente archivo <a href='https:\/\/drive.google.com\/file\/d\/1pc1wkD7G23eTOGxQLNPZ7FnjzuOI6l_i\/view?usp=drive_link' target='_blank' rel='noopener'>Estadística<\/a>, antes de <strong>Tabla de frecuencia<\/strong>)<\/p>"
+            },
+            {
+                "apellido": "Mertes",
                 "nombre": "Milagros",
-                "act_1": "7,78",
-                "act_2": "6,43",
-                "tp": " ",
-                "asistencia": "76,2",
-                "final": "7",
-                "recupera": "Aprobada, pero debe asistir a semana de recuperatorio por cantidad de faltas"
+                "dni": "",
+                "act_1": "0",
+                "tp": "0",
+                "asistencia": "1",
+                "final": "1",
+                "recupera": "Libre"
             },
+            {
+                "apellido": "Miranda",
+                "nombre": "Pamela",
+                "dni": "",
+                "act_1": "10",
+                "tp": "8,1",
+                "asistencia": "70",
+                "final": "9",
+                "recupera": "Aprobada, ¡excelente trabajo, felicitaciones por el esfuerzo! 💪"
+            }, 
+            {
+                "apellido": "Pérez",
+                "nombre": "Vanesa",
+                "dni": "",
+                "act_1": "7",
+                "tp": "7,9",
+                "asistencia": "40",
+                "final": "7",
+                "recupera": "Aprobada, ¡excelente trabajo, felicitaciones por el esfuerzo! 💪"
+            }, 
+            {
+                "apellido": "Romero",
+                "nombre": "Azul",
+                "dni": "",
+                "act_1": "10",
+                "tp": "6,5",
+                "asistencia": "63",
+                "final": "8",
+                "recupera": "Aprobada, ¡excelente trabajo, felicitaciones por el esfuerzo! 💪"
+            }, 
+            {
+                "apellido": "Terraza",
+                "nombre": "Mónica",
+                "dni": "",
+                "act_1": "8",
+                "tp": "8,3",
+                "asistencia": "57",
+                "final": "9",
+                "recupera": "Aprobada, ¡excelente trabajo, felicitaciones por el esfuerzo! 💪"
+            }, 
+            {
+                "apellido": "Zapata",
+                "nombre": "Rosa",
+                "dni": "",
+                "act_1": "7",
+                "tp": "7,9",
+                "asistencia": "40",
+                "final": "7",
+                "recupera": "Aprobada, ¡excelente trabajo, felicitaciones por el esfuerzo! 💪"
+            }
+        ]
+        const input = document.querySelector('[data-name-input]');
+
+        const value = input.value;
+
+        input.value = '';
+
+        const nameObj = {
+            value,
+        };
+
+        const nameStorage = JSON.parse(localStorage.getItem('tasks')) || [];
+        nameStorage.push(nameObj);
+
+        localStorage.setItem('name', JSON.stringify(nameStorage));
+
+        getLinkMate(notasMateJSON, value)
+
+    })
+})
+
+$(document).ready(function () {
+    $('[data-btn-materias]').click(function () {
+        $("#materias-todas").modal();
+
+        const notasMateriasJSON = [
             {
                 "apellido": "Plattner",
                 "nombre": "Marco giuliano",
-                "act_1": "5,56",
-                "act_2": "2,14",
-                "tp": "7,5",
-                "asistencia": "85,7",
-                "final": "7",
+                "cs_soc_1": "8,33",
+                "cs_soc_2": "8,33",
+                "cs_nat_1": "8,33",
+                "cs_nat_2": "8,33",
+                "mate_1": "8,33",
+                "mate_2": "8,33",
+                "lengua_1": "8,33",
+                "lengua_2": "4,64",
+                "ingles_1": "4,64",
+                "ingles_2": "4,64",
+                "econ_1": "4,64",
+                "econ_2": "4,64",
+                "condicion": "76,2%",
+                "final": "8",
                 "recupera": "Aprobado"
             },
             {
-                "apellido": "Zorzzi",
+                "apellido": "pepe",
                 "nombre": "Enzo",
-                "act_1": "8,33",
-                "act_2": "4,64",
-                "tp": "7",
-                "asistencia": "76,2%",
+                "cs_soc_1": "8,33",
+                "cs_soc_2": "8,33",
+                "cs_nat_1": "8,33",
+                "cs_nat_2": "8,33",
+                "mate_1": "8,33",
+                "mate_2": "8,33",
+                "lengua_1": "8,33",
+                "lengua_2": "4,64",
+                "ingles_1": "4,64",
+                "ingles_2": "4,64",
+                "econ_1": "4,64",
+                "econ_2": "4,64",
+                "condicion": "76,2%",
                 "final": "8",
                 "recupera": "Aprobado"
             }
@@ -178,28 +281,120 @@ function getLink(notasJSON, apellido) {
 
     notasJSON.forEach(estudiante => {
         while (apellido.toUpperCase() == estudiante.apellido.toUpperCase()) {
-            
+
             // Crea un elemento <span> y configura sus atributos
             var enlace = document.createElement('span');
             enlace.textContent = estudiante.apellido + ", " + estudiante.nombre;
-            data_estudiante.innerHTML="";
+            data_estudiante.innerHTML = "";
             data_estudiante.appendChild(enlace);
             // Agrega los datos a la tabla
-            const linea = document.createElement('tr');
-            const contenido =`
-            <td>${estudiante.act_1}</td>
-            <td>${estudiante.act_2}</td>
-            <td>${estudiante.tp}</td>
-            <td>${estudiante.asistencia}</td>
-            <td class="td-nf">${estudiante.final}</td>
+            matrizMateria = armarMatriz(estudiante.apellido);
+
+            for (let j = 0; j < 2; j++) {
+                for (let i = 0; i < 6; i++) {
+                    const linea = document.createElement('tr');
+                    const contenido = `
+                    <td>${materias[i]}</td>
+                    <td>${matrizMateria[j][i]}</td>
+                    `;
+                    linea.innerHTML = contenido;
+                    tabla.innerHTML = '';
+                    tabla.appendChild(linea);
+                }
+            }
+
+            /*const linea = document.createElement('tr');
+            const contenido = `
+            <td>${materias[3]}</td>
+            <td>${estudiante.lengua_1}</td>
+            <td>${estudiante.lengua_2}</td>
+            
+                    <td>${estudiante.tp}</td>
+                    <td>${estudiante.asistencia}</td>
+                    <td class="td-nf">${estudiante.final}</td>
             `;
+            linea.innerHTML = contenido;
+            tabla.innerHTML = '';
+            tabla.appendChild(linea);
+            */
+
+            var recupera = document.createElement('span');
+            recupera.textContent = estudiante.recupera;
+            data_recupera.innerHTML = "";
+            data_recupera.appendChild(recupera);
+
+            break;
+        }
+    });
+}
+
+function armarMatriz(apellido) {
+    notasMaterias = [];
+    notasMateriasJSON.forEach(estudiante => {
+        if (apellido.toUpperCase() == estudiante.apellido.toUpperCase()) {
+            notasMaterias[0][0] = estudiante.cs_soc_1;
+            notasMaterias[0][1] = estudiante.cs_soc_2;
+            notasMaterias[1][0] = estudiante.cs_nat_1;
+            notasMaterias[1][1] = estudiante.cs_nat_2;
+            notasMaterias[2][0] = estudiante.mate_1;
+            notasMaterias[2][1] = estudiante.mate_1;
+            notasMaterias[3][0] = estudiante.lengua_1;
+            notasMaterias[3][1] = estudiante.lengua_1;
+            notasMaterias[4][0] = estudiante.ingles_2;
+            notasMaterias[4][1] = estudiante.ingles_2;
+            notasMaterias[5][0] = estudiante.econ_2;
+            notasMaterias[5][1] = estudiante.econ_2;
+        }
+    })
+    return notasMaterias;
+}
+
+
+function getLinkMate(notasJSON, apellido) {
+
+    const data_estudiante = document.querySelector('[data-estudiante]');
+    const tabla = document.querySelector('[data-table]');
+    const data_recupera = document.querySelector('[data-recupera]');
+
+    notasJSON.forEach(estudiante => {
+        while (apellido.toUpperCase() == estudiante.apellido.toUpperCase()) {
+
+            // Crea un elemento <span> y configura sus atributos
+            var enlace = document.createElement('span');
+            enlace.textContent = estudiante.apellido + ", " + estudiante.nombre;
+            data_estudiante.innerHTML = "";
+            data_estudiante.appendChild(enlace);
+            // Agrega los datos a la tabla
+                        
+            var asistenciaAprob = "No aprobada";
+            if(parseInt(estudiante.asistencia)>50){
+                asistenciaAprob = "Aprobada";
+            }
+            const linea = document.createElement('tr');
+            let contenido ='';
+            if(parseInt(estudiante.final)>6){                
+                contenido = `
+                <td>${estudiante.act_1}</td>
+                <td>${estudiante.tp}</td>
+                <td>${asistenciaAprob}</td>
+                <td class="td-nf">${estudiante.final}</td>
+                `;
+            }else{                
+                contenido = `
+                <td>${estudiante.act_1}</td>
+                <td>${estudiante.tp}</td>
+                <td>${asistenciaAprob}</td>
+                <td class="td-nf-a">${estudiante.final}</td>
+                `;
+            }
             linea.innerHTML = contenido;
             tabla.innerHTML = '';
             tabla.appendChild(linea);
 
             var recupera = document.createElement('span');
-            recupera.textContent = estudiante.recupera;
-            data_recupera.innerHTML="";
+            
+            recupera.innerHTML = `${estudiante.recupera}`;
+            data_recupera.innerHTML = '';
             data_recupera.appendChild(recupera);
 
             break;

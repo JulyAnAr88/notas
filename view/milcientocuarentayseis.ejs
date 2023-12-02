@@ -1,0 +1,38 @@
+<%- include("_header") %>
+ <!-- Sección del Home escuela 1146-->
+
+ <section id="home" class="home-container section">
+    <aside class="welcome text-center text-lg-center title-shadow">
+
+      <h1>Consultá tu nota <i class="fa-solid fa-infinity"></i></h1>
+    </aside>
+    <article id="input-apellido" class="parraph-1 text-center">
+      <p>Ingresá tu número de documento:</p>
+      <input type="name" name="task" placeholder="Tu DNI" class="inputName" autocomplete="off" data-name-input />
+    </article>
+    <div class="text-center text-lg-center">
+      <a href="#nota"><button class="btn btn-primary" data-btn>Ver notas</button></a>
+    </div>
+    <div class="text-center text-lg-center">
+      <h3 class="estudiante" data-estudiante></h3>
+    </div>
+    <table class="nota-tabla parraph-1 text-center">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">1ra actividad</th>
+          <th scope="col">2da actividad</th>
+          <th scope="col">TP</th>
+          <th scope="col">Asistencia</th>
+          <th scope="col">Nota final</th>
+        </tr>
+      </thead>
+      <tbody data-table> </tbody>
+    </table>
+    <div class="text-center text-lg-center">
+      <h3 class="recupera" data-recupera></h3>
+    </div>
+
+  </section>
+
+  
+<%- include("_footer") %>

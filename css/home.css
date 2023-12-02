@@ -7,7 +7,7 @@
 
 .home-container {
   display: block;
-  height: 35rem;
+  height: 50rem;
   background-color: var(--gray-light-color);
   justify-content: space-between;
   align-content: center;
@@ -37,8 +37,13 @@
   background-color: var(--first-color);
 }
 
+.td-nf-a {
+  background-color: var(--nf-aplazo-color);
+}
+
 td, th {
   border: var(--gray-dark-color) 0.5px solid;
+  width: 0.25%;
 }
 
 .thead-dark {

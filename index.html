@@ -27,7 +27,7 @@
   <header class="menu section">
     <section class="menu-container container">
       <div class="filter">
-        <img src="img/fachada-escuela.webp" alt="Fachada escuela">
+        <img src="img/mediateca.jpg" alt="Fachada escuela">
       </div>
     </section>
   </header>
@@ -36,15 +36,15 @@
 
     <section id="home" class="home-container section">
       <aside class="welcome text-center text-lg-center title-shadow">
-
+  
         <h1>Consultá tu nota <i class="fa-solid fa-infinity"></i></h1>
       </aside>
       <article id="input-apellido" class="parraph-1 text-center">
-        <p>Ingresá tu apellido:</p>
-        <input type="name" name="task" placeholder="Tu apellido" class="inputName" autocomplete="off" data-name-input />
+        <p>Ingresá tu número de documento:</p>
+        <input type="name" name="task" placeholder="Tu DNI" class="inputName" autocomplete="off" data-name-input />
       </article>
       <div class="text-center text-lg-center">
-        <a href="#nota"><button class="btn btn-primary" data-btn>Ver notas</button></a>
+        <a href="#nota-mate"><button class="btn btn-primary" data-btn-mate>Ver notas</button></a>
       </div>
       <div class="text-center text-lg-center">
         <h3 class="estudiante" data-estudiante></h3>
@@ -52,9 +52,8 @@
       <table class="nota-tabla parraph-1 text-center">
         <thead class="thead-dark">
           <tr>
-            <th scope="col">1ra actividad</th>
-            <th scope="col">2da actividad</th>
-            <th scope="col">TP</th>
+            <th scope="col">1ra act. evaluativa</th>
+            <th scope="col">Trabajo Práctico</th>
             <th scope="col">Asistencia</th>
             <th scope="col">Nota final</th>
           </tr>
@@ -64,7 +63,17 @@
       <div class="text-center text-lg-center">
         <h3 class="recupera" data-recupera></h3>
       </div>
-
+      <div class="text-left text-lg-left">
+        <h6 class="comentario-final-1" data-com-final>
+          * Condición del Estudiante: RP (Regular Presencial) 
+          / RS (Regular Semipresencial) / L (Libre)</h6>
+        <h6 class="comentario-final-2" data-com-final>
+          # Proyecto de Acción: A (Aprobado) / EP (En Proceso)</h6>
+        <h6 class="comentario-final-2" data-com-final>
+          La nota de aprobación del módulo es 7 (Siete), como lo 
+          establece el Decreto Nº 3279/83 - Art. 39</h6>        
+      </div>
+  
     </section>
 
     <footer class="footer section">
