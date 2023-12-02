@@ -196,10 +196,24 @@ p {
   color: var(--second-color);
 }
 
+.footer > p{
+  font-size: 0.5rem;
+}
 
 .social-media svg {
   width: 1.5rem;
   height: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+  h6 {  
+    font-size: 0.7rem;
+  }
+
+  .footer > p{
+    font-size: 0.75rem;
+  }
 }
 
 
