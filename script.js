@@ -21,7 +21,7 @@ $(document).ready(function () {
             {
                 "apellido": "Barrios",
                 "nombre": "Jesica",
-                "dni": "",
+                "dni": "46449272",
                 "act_1": "0",
                 "tp": "0",
                 "asistencia": "7",
@@ -31,7 +31,7 @@ $(document).ready(function () {
             {
                 "apellido": "Casco",
                 "nombre": "Andrea",
-                "dni": "",
+                "dni": "41515222",
                 "act_1": "0",
                 "tp": "0",
                 "asistencia": "25",
@@ -41,7 +41,7 @@ $(document).ready(function () {
             {
                 "apellido": "Casco",
                 "nombre": "Laura",
-                "dni": "",
+                "dni": "36263109",
                 "act_1": "0",
                 "tp": "9",
                 "asistencia": "35",
@@ -61,7 +61,7 @@ $(document).ready(function () {
             {
                 "apellido": "Espíndola",
                 "nombre": "Jorge",
-                "dni": "",
+                "dni": "39127609",
                 "act_1": "5",
                 "tp": "5,5",
                 "asistencia": "43",
@@ -71,7 +71,7 @@ $(document).ready(function () {
             {
                 "apellido": "Fernández",
                 "nombre": "Lucía",
-                "dni": "",
+                "dni": "30502034",
                 "act_1": "5",
                 "tp": "5,5",
                 "asistencia": "50",
@@ -81,7 +81,7 @@ $(document).ready(function () {
             {
                 "apellido": "Gamarra",
                 "nombre": "Gastón",
-                "dni": "",
+                "dni": "27204597",
                 "act_1": "8",
                 "tp": "7,7",
                 "asistencia": "60",
@@ -91,7 +91,7 @@ $(document).ready(function () {
             {
                 "apellido": "Garro",
                 "nombre": "Marianela",
-                "dni": "",
+                "dni": "415155244",
                 "act_1": "0",
                 "tp": "-",
                 "asistencia": "27",
@@ -101,7 +101,7 @@ $(document).ready(function () {
             {
                 "apellido": "Hilve",
                 "nombre": "Claudia",
-                "dni": "",
+                "dni": "26614045",
                 "act_1": "7",
                 "tp": "8,3",
                 "asistencia": "73",
@@ -111,7 +111,7 @@ $(document).ready(function () {
             {
                 "apellido": "Lencina",
                 "nombre": "Lorena",
-                "dni": "",
+                "dni": "30452072",
                 "act_1": "8",
                 "tp": "7,9",
                 "asistencia": "73",
@@ -121,7 +121,7 @@ $(document).ready(function () {
             {
                 "apellido": "Machado",
                 "nombre": "Griselda",
-                "dni": "",
+                "dni": "25046575",
                 "act_1": "5",
                 "tp": "5,5",
                 "asistencia": "70",
@@ -161,7 +161,7 @@ $(document).ready(function () {
             {
                 "apellido": "Romero",
                 "nombre": "Azul",
-                "dni": "",
+                "dni": "44525098",
                 "act_1": "10",
                 "tp": "6,5",
                 "asistencia": "63",
@@ -171,7 +171,7 @@ $(document).ready(function () {
             {
                 "apellido": "Terraza",
                 "nombre": "Mónica",
-                "dni": "",
+                "dni": "23264212",
                 "act_1": "8",
                 "tp": "8,3",
                 "asistencia": "57",
@@ -350,14 +350,14 @@ function armarMatriz(apellido) {
 }
 
 
-function getLinkMate(notasJSON, apellido) {
+function getLinkMate(notasJSON, dni) {
 
     const data_estudiante = document.querySelector('[data-estudiante]');
     const tabla = document.querySelector('[data-table]');
     const data_recupera = document.querySelector('[data-recupera]');
 
     notasJSON.forEach(estudiante => {
-        while (apellido.toUpperCase() == estudiante.apellido.toUpperCase()) {
+        while (dni.trim() == estudiante.dni) {
 
             // Crea un elemento <span> y configura sus atributos
             var enlace = document.createElement('span');
