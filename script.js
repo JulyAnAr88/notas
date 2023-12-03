@@ -151,7 +151,7 @@ $(document).ready(function () {
             {
                 "apellido": "Pérez",
                 "nombre": "Vanesa",
-                "dni": "",
+                "dni": "31419553",
                 "act_1": "7",
                 "tp": "7,9",
                 "asistencia": "40",
