@@ -141,7 +141,7 @@ $(document).ready(function () {
             {
                 "apellido": "Miranda",
                 "nombre": "Pamela",
-                "dni": "",
+                "dni": "31155711",
                 "act_1": "10",
                 "tp": "8,1",
                 "asistencia": "70",
