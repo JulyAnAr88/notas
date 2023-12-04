@@ -91,7 +91,7 @@ $(document).ready(function () {
             {
                 "apellido": "Garro",
                 "nombre": "Marianela",
-                "dni": "415155244",
+                "dni": "41515244",
                 "act_1": "0",
                 "tp": "-",
                 "asistencia": "27",
