@@ -17,7 +17,7 @@ $(document).ready(function () {
     $('[data-btn-mate]').click(function () {
         $("#nota-mate").modal();
 
-        const notasMateJSON = [
+        const notasMatJSON = [
             {
                 "apellido": "Barrios",
                 "nombre": "Jesica",
